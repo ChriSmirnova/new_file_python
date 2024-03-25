@@ -1,17 +1,18 @@
-number_1 = int(input("Say whole number from 1 to 10?"))
-number_2 = 2
-multiply_action = number_1 * number_2
-divide_action = number_1 / number_2
-plus_action = number_1 + number_2
-multiply_action = number_1 - number_2
-if number_1 in (2,4,6):
-    print(multiply_action)
-elif number_1 in (8,10):
-    print(divide_action)
-elif number_1 in (1,3,5):
-    print(plus_action)
-elif number_1 in (7,9):
-    print(minus_action)
+operation = input("Which operation you want use +, -, /, *?")
+number_1 = int(input("Say first number?"))
+number_2 = int(input("Say second number?"))
+if operation == '+' :
+    result_1 = number_1 + number_2
+    print(result_1)
+elif operation == '-' :
+    result_2 = number_1 - number_2
+    print(result_2)
+elif operation == '/':
+    result_3 = number_1 / number_2
+    print(result_3)
+elif operation == '*':
+    result_4 = number_1 * number_2
+    print(result_4)
 else:
-    print("The number is not recognized.Try again!")
+    print("Try again!")
 
